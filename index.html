@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Itzenix offers professional web development services for local and professional businesses. We build high-quality, responsive websites tailored to your needs.">
+    <meta name="keywords" content="web development, web design, responsive websites, e-commerce, Itzenix">
+    <title>Itzenix - Web Development Services</title>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'YOUR_GA_TRACKING_ID');
+    </script>
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'YOUR_PIXEL_ID');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">Itzenix</div>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#proposal-form" class="cta-button">Request a Proposal</a></li>
+                <li><a href="#calculator" class="cta-button">Instant Quote</a></li>
+                <li><a href="#project-tracker" class="cta-button">Track Project</a></li>
+            </ul>
+            <div id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1>Itzenix: Crafting Digital Excellence</h1>
+            <p>Your vision, our expertise. We build stunning, high-performance websites tailored for local and professional businesses.</p>
+            <a href="#contact" class="cta-button">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            <h2>About Itzenix</h2>
+            <p>Founded on the principles of innovation and excellence, Itzenix is a passionate team of web developers dedicated to helping businesses thrive in the digital world. We believe in building more than just websites; we build relationships. Our commitment to quality, transparent communication, and unwavering customer satisfaction is the cornerstone of our success.</p>
+            <h3>Our Mission</h3>
+            <p>To empower businesses with cutting-edge web solutions that drive growth, enhance brand visibility, and create lasting digital impressions.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="card">
+                <i class="fas fa-pencil-ruler"></i>
+                <h3>Custom Website Design</h3>
+                <p>We create unique and visually appealing websites tailored to your brand. Our designs are focused on user experience and conversion.</p>
+                <p class="price">5000 INR</p>
+                <a href="upi://pay?pa=your-upi-id@oksbi&pn=Itzenix&am=5000&cu=INR&tn=Custom%20Website%20Design" target="_blank" class="cta-button">Pay Now</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-shopping-cart"></i>
+                <h3>E-commerce Solutions</h3>
+                <p>We build powerful and secure online stores to help you sell your products. Our e-commerce solutions are scalable and easy to manage.</p>
+                <p class="price">5000 INR</p>
+                <a href="upi://pay?pa=your-upi-id@oksbi&pn=Itzenix&am=5000&cu=INR&tn=E-commerce%20Solutions" target="_blank" class="cta-button">Pay Now</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-cogs"></i>
+                <h3>Full Stack Website</h3>
+                <p>We offer end-to-end web development solutions, from frontend to backend, to create robust and scalable web applications.</p>
+                <p class="price">5000 INR</p>
+                <a href="upi://pay?pa=your-upi-id@oksbi&pn=Itzenix&am=5000&cu=INR&tn=Full%20Stack%20Website" target="_blank" class="cta-button">Pay Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Our Work</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="*">All</button>
+            <button class="filter-btn" data-filter=".web-design">Web Design</button>
+            <button class="filter-btn" data-filter=".ecommerce">E-commerce</button>
+            <button class="filter-btn" data-filter=".branding">Branding</button>
+        </div>
+        <div class="swiper-container portfolio-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide portfolio-item web-design">
+                    <img src="https://via.placeholder.com/300" alt="Digischema">
+                    <div class="portfolio-info">
+                        <h3>Digischema</h3>
+                        <p>A digital marketing agency website.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide portfolio-item ecommerce">
+                    <img src="https://via.placeholder.com/300" alt="Project 2">
+                </div>
+                <div class="swiper-slide portfolio-item branding">
+                    <img src="https://via.placeholder.com/300" alt="Project 3">
+                </div>
+                <div class="swiper-slide portfolio-item web-design">
+                    <img src="https://via.placeholder.com/300" alt="Project 4">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section id="case-studies">
+        <h2>Case Studies</h2>
+        <div class="case-study-cards">
+            <div class="case-study-card">
+                <img src="https://via.placeholder.com/400x250" alt="Case Study 1">
+                <h3>Boosting Sales for an E-commerce Store</h3>
+                <p>We helped a local e-commerce store increase their sales by 200% in just 3 months by redesigning their website and optimizing their user experience.</p>
+                <a href="#" class="cta-button">Read More</a>
+            </div>
+            <div class="case-study-card">
+                <img src="https://via.placeholder.com/400x250" alt="Case Study 2">
+                <h3>Creating a Strong Brand Identity</h3>
+                <p>We worked with a new startup to create a strong brand identity that resonates with their target audience. This resulted in a 50% increase in brand recognition.</p>
+                <a href="#" class="cta-button">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="process">
+        <h2>Our Process</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon"><i class="fas fa-lightbulb"></i></div>
+                <h3>Discovery</h3>
+                <p>We start by understanding your business, goals, and target audience.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon"><i class="fas fa-pencil-alt"></i></div>
+                <h3>Design</h3>
+                <p>We create a beautiful and user-friendly design that reflects your brand.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon"><i class="fas fa-code"></i></div>
+                <h3>Development</h3>
+                <p>We bring the design to life with clean and efficient code.</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon"><i class="fas fa-rocket"></i></div>
+                <h3>Launch</h3>
+                <p>We deploy your website and ensure everything is running smoothly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p>"Itzenix transformed our online presence. Their team is professional, creative, and incredibly responsive."</p>
+                        <span>- John Doe, CEO of ExampleCorp</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p>"The best web development agency we've ever worked with. Highly recommended!"</p>
+                        <span>- Jane Smith, Marketing Director at TestCo</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card">
+                        <p>"A fantastic team that delivers exceptional results. Our new website is a masterpiece."</p>
+                        <span>- Sam Wilson, Owner of SW Enterprises</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <section id="clients">
+        <h2>Our Clients</h2>
+        <div class="client-logos">
+            <img src="https://via.placeholder.com/150x80" alt="Client 1">
+            <img src="https://via.placeholder.com/150x80" alt="Client 2">
+            <img src="https://via.placeholder.com/150x80" alt="Client 3">
+            <img src="https://via.placeholder.com/150x80" alt="Client 4">
+            <img src="https://via.placeholder.com/150x80" alt="Client 5">
+        </div>
+    </section>
+
+    <section id="trust-badges">
+        <h2>Our Certifications</h2>
+        <div class="badges">
+            <img src="https://via.placeholder.com/150x80" alt="Certification 1">
+            <img src="https://via.placeholder.com/150x80" alt="Certification 2">
+            <img src="https://via.placeholder.com/150x80" alt="Certification 3">
+        </div>
+    </section>
+
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What is the turnaround time for a new website?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>The turnaround time depends on the complexity of the project. A typical website takes about 4-6 weeks from start to finish.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you provide hosting and domain services?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, we offer hosting and domain registration services to provide a seamless experience for our clients.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What is your payment process?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We require a 50% deposit to start the project and the remaining 50% upon completion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <h2>Our Plans</h2>
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <h3>Static Website</h3>
+                <p class="price"><sup>INR</sup>5000</p>
+                <p>Perfect for startups and small businesses.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> 5 Pages</li>
+                    <li><i class="fas fa-check"></i> Domain & Hosting Included</li>
+                    <li><i class="fas fa-check"></i> Basic SEO</li>
+                </ul>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Dynamic Website</h3>
+                <p class="price"><sup>INR</sup>10000</p>
+                <p>Ideal for growing businesses and companies.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> 10 Pages</li>
+                    <li><i class="fas fa-check"></i> Domain & Hosting Included</li>
+                    <li><i class="fas fa-check"></i> Advanced SEO</li>
+                </ul>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Full Stack Website</h3>
+                <p class="price"><sup>INR</sup>20000</p>
+                <p>For large companies and complex applications.</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Unlimited Pages</li>
+                    <li><i class="fas fa-check"></i> Domain & Hosting Included</li>
+                    <li><i class="fas fa-check"></i> Premium SEO</li>
+                </ul>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form" action="https://formspree.io/f/your_form_id" method="POST">
+            <div class="form-control">
+                <input type="text" name="name" placeholder="Your Name">
+                <small></small>
+            </div>
+            <div class="form-control">
+                <input type="email" name="email" placeholder="Your Email">
+                <small></small>
+            </div>
+            <div class="form-control">
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <small></small>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="calculator">
+        <h2>Instant Quote Calculator</h2>
+        <div class="calculator-container">
+            <div class="form-group">
+                <label for="service-type">Service Type:</label>
+                <select id="service-type">
+                    <option value="5000">Static Website (5000 INR)</option>
+                    <option value="10000">Dynamic Website (10000 INR)</option>
+                    <option value="20000">Full Stack Website (20000 INR)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="pages">Number of Pages:</label>
+                <input type="number" id="pages" value="5" min="1">
+            </div>
+            <div class="form-group">
+                <label for="seo">SEO Package:</label>
+                <select id="seo">
+                    <option value="0">None</option>
+                    <option value="1000">Basic (1000 INR)</option>
+                    <option value="2000">Advanced (2000 INR)</option>
+                    <option value="3000">Premium (3000 INR)</option>
+                </select>
+            </div>
+            <div class="total-quote">
+                <h3>Total Estimated Cost:</h3>
+                <p id="total-cost">5000 INR</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="proposal-form">
+        <h2>Request a Proposal</h2>
+        <form id="multi-step-form">
+            <div class="form-step active">
+                <h3>Step 1: Your Contact Information</h3>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone Number">
+                <button type="button" class="next-btn">Next</button>
+            </div>
+            <div class="form-step">
+                <h3>Step 2: Project Details</h3>
+                <select name="service" required>
+                    <option value="">Select a Service</option>
+                    <option value="web-design">Web Design</option>
+                    <option value="ecommerce">E-commerce</option>
+                    <option value="full-stack">Full Stack</option>
+                </select>
+                <textarea name="project-description" placeholder="Tell us about your project"></textarea>
+                <button type="button" class="prev-btn">Previous</button>
+                <button type="button" class="next-btn">Next</button>
+            </div>
+            <div class="form-step">
+                <h3>Step 3: Budget & Timeline</h3>
+                <input type="text" name="budget" placeholder="What's your budget?">
+                <input type="text" name="timeline" placeholder="What's your ideal timeline?">
+                <button type="button" class="prev-btn">Previous</button>
+                <button type="submit">Submit Request</button>
+            </div>
+        </form>
+    </section>
+
+    <section id="project-tracker">
+        <h2>Project Status Tracker</h2>
+        <div class="tracker-container">
+            <div class="project-details">
+                <h3>Project: Alpha</h3>
+                <p><strong>Status:</strong> In Progress</p>
+                <p><strong>Completion:</strong> 60%</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+            </div>
+            <ul class="timeline">
+                <li class="completed">Discovery</li>
+                <li class="completed">Design</li>
+                <li class="active">Development</li>
+                <li>Launch</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay up to date with our latest news and offers.</p>
+        <form id="newsletter-form">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <section id="careers">
+        <h2>Join Our Team</h2>
+        <p>We are always looking for talented individuals to join our team. Check out our current openings below.</p>
+        <div class="job-listings">
+            <div class="job">
+                <h3>Frontend Developer</h3>
+                <p><strong>Location:</strong> Remote</p>
+                <p><strong>Job Type:</strong> Full-time</p>
+                <p><strong>Salary:</strong> 15k - 20k per month</p>
+                <h4>Job Description</h4>
+                <p>We are looking for a skilled frontend developer to join our team. You will be responsible for building the 'client-side' of our web applications, translating UI/UX design wireframes to actual code that will produce visual elements of the application.</p>
+                <h4>Qualifications</h4>
+                <ul>
+                    <li>Bachelor's degree in Computer Science or a related field.</li>
+                    <li>3+ years of experience in frontend development.</li>
+                    <li>Proficient in HTML, CSS, and JavaScript.</li>
+                    <li>Experience with modern JavaScript frameworks (e.g., React, Vue, Angular).</li>
+                </ul>
+                <h4>Skills Required</h4>
+                <ul>
+                    <li>Strong understanding of responsive design principles.</li>
+                    <li>Experience with version control systems (e.g., Git).</li>
+                    <li>Excellent problem-solving skills.</li>
+                </ul>
+                <a href="#contact" class="apply-button">Apply Now</a>
+            </div>
+            <div class="job">
+                <h3>Backend Developer</h3>
+                <p><strong>Location:</strong> Remote</p>
+                <p><strong>Job Type:</strong> Full-time</p>
+                <p><strong>Salary:</strong> 15k - 20k per month</p>
+                <h4>Job Description</h4>
+                <p>We are seeking a backend developer to build and maintain the server-side of our web applications. You will work closely with our frontend developers to ensure seamless integration and be responsible for our database design and maintenance.</p>
+                <h4>Qualifications</h4>
+                <ul>
+                    <li>Bachelor's degree in Computer Science or a related field.</li>
+                    <li>4+ years of experience in backend development.</li>
+                    <li>Proficient in server-side languages (e.g., Node.js, Python, Java).</li>
+                    <li>Experience with database technology (e.g., MySQL, PostgreSQL, MongoDB).</li>
+                </ul>
+                <h4>Skills Required</h4>
+                <ul>
+                    <li>Experience with API design and development.</li>
+                    <li>Strong understanding of data structures and algorithms.</li>
+                    <li>Knowledge of cloud platforms (e.g., AWS, Azure, Google Cloud).</li>
+                </ul>
+                <a href="#contact" class="apply-button">Apply Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats">
+        <div class="stat">
+            <h3 class="counter" data-target="150">0</h3>
+            <p>Projects Completed</p>
+        </div>
+        <div class="stat">
+            <h3 class="counter" data-target="120">0</h3>
+            <p>Happy Clients</p>
+        </div>
+        <div class="stat">
+            <h3 class="counter" data-target="10">0</h3>
+            <p>Years of Experience</p>
+        </div>
+    </section>
+
+    <section id="industries">
+        <h2>Industries We Serve</h2>
+        <div class="industry-icons">
+            <div class="industry-icon">
+                <i class="fas fa-school"></i>
+                <p>Education</p>
+            </div>
+            <div class="industry-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <p>E-commerce</p>
+            </div>
+            <div class="industry-icon">
+                <i class="fas fa-hospital"></i>
+                <p>Healthcare</p>
+            </div>
+            <div class="industry-icon">
+                <i class="fas fa-lightbulb"></i>
+                <p>Startups</p>
+            </div>
+            <div class="industry-icon">
+                <i class="fas fa-building"></i>
+                <p>Corporate</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-bullseye"></i>
+                <h3>Expertise</h3>
+                <p>Our team has years of experience in building high-quality web solutions.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-headset"></i>
+                <h3>24/7 Support</h3>
+                <p>We are always here to help you with any questions or issues.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-cogs"></i>
+                <h3>Customized Solutions</h3>
+                <p>We provide solutions tailored to your specific business needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>From the Blog</h2>
+        <div class="blog-posts">
+            <div class="blog-post">
+                <img src="https://via.placeholder.com/400x250" alt="Blog Post 1">
+                <h3>The Importance of a Mobile-First Approach</h3>
+                <p>Learn why designing for mobile devices first is crucial for a successful website in today's digital landscape.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="https://via.placeholder.com/400x250" alt="Blog Post 2">
+                <h3>10 Tips for a High-Converting Landing Page</h3>
+                <p>Discover our top 10 tips for creating a landing page that converts visitors into customers.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="https://via.placeholder.com/400x250" alt="Blog Post 3">
+                <h3>The Future of Web Design: Trends to Watch</h3>
+                <p>Explore the latest web design trends that are shaping the future of the internet.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Stay up to date with our latest news and offers.</p>
+        <form id="newsletter-form">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h1 class="logo-text">Itzenix</h1>
+                <p>
+                    Itzenix is a creative agency that specializes in web design and development. We are passionate about helping businesses grow and succeed online.
+                </p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 Itzenix. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- AI Chatbot Assistant -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Itzenix Assistant"
+      agent-id="YOUR_DIALOGFLOW_AGENT_ID"
+      language-code="en"
+    ></df-messenger>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>
